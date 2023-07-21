@@ -20,6 +20,10 @@ app.use('/api/users', userRoute)
 app.use('/api/movies', movieRoute)
 app.use('/api/lists', listRoute)
 
+app.get((req, res) => {
+    res.send("api is runing ...")
+})
+
 
 
 app.listen(PORT, () => {
